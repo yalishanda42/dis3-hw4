@@ -25,19 +25,18 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: LaTeX compilation
-        uses: dante-ev/latex-action@v0.2.0
+      - name: Compile LaTeX
+        uses: xu-cheng/latex-action@v0.2.0
         with:
-          # The root LaTeX file to be compiled
           root_file: solution.tex
-          # LaTeX engine to be used
-          compiler: htlatex
-          # The working directory for the latex compiler to be invoked
-          working_directory: build
-      - name: Github Pages deploy
+          compiler: htlatex # to HTML
+               
+      - name: Copy to index.html
+        run: cp solution.html index.html
+        
+      - name: Deploy to Github Pages
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: build
 
