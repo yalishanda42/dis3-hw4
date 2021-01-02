@@ -1,20 +1,30 @@
 \documentclass{article}
+\usepackage{amsmath}
 \usepackage[utf8]{inputenc}
 \usepackage[bulgarian]{babel}
 
-\title{Курсова работа №3}
+\title{Курсова работа №4}
 \author{Александър Игнатов \\ Ф№ 62136 }
-
 \date{\today}
-% Hint: \title{what ever}, \author{who care} and \date{when ever} could stand
-% before or after the \begin{document} command
-% BUT the \maketitle command MUST come AFTER the \begin{document} command!
+
 \begin{document}
 
 \maketitle
 
 \[
     (8x+3)y'' + y' = 0, y(0) = 1, y'(0) = -2
+\]
+
+Чрез последователно полагане на първа и втора производна получаваме
+
+\[
+    y(x) = \frac{2}{7}\sqrt[8]{3(8x+3)} + \frac{13}{7}
+\]
+
+Разлагането на функцията в степенен ред има вида
+
+\[
+    y(x) = 1 - \frac{6}{7}\sum_{n=1}^{\infty} \bigg(\frac{8}{3}\bigg)^n \binom{\frac{7}{8}}{n} x^n
 \]
 
 \end{document}

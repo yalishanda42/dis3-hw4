@@ -115,9 +115,33 @@ Css: div.thanks{text-align:left; margin-left:10%; font-size:85%; font-style:ital
 Css: div.author{white-space: nowrap;}
 Css: .abstract p {margin-left:5%; margin-right:5%;}
 Css: div.abstract {width:100%;}
+Css: .equation td{text-align:center; }
+Css: .equation-star td{text-align:center; }
+Css: table.equation-star { width:100%; }
+Css: table.equation { width:100%; }
+Css: table.align, table.alignat, table.xalignat, table.xxalignat, table.flalign {width:95%; margin-left:5%; white-space: nowrap;}
+Css: table.align-star, table.alignat-star, table.xalignat-star, table.flalign-star {margin-left:auto; margin-right:auto; white-space: nowrap;}
+Css: td.align-label { width:5%; text-align:center; }
+Css: td.align-odd { text-align:right; padding-right:0.3em;}
+Css: td.align-even { text-align:left; padding-right:0.6em;}
+Css: table.multline, table.multline-star {width:100%;}
+Css: td.gather {text-align:center; }
+Css: table.gather {width:100%;}
+Css: div.gather-star {text-align:center;}
 --- needs --- solution.idv[2] ==> solution0x.png ---
+--- needs --- solution.idv[3] ==> solution1x.png ---
+--- needs --- solution.idv[4] ==> solution2x.png ---
+--- needs --- solution.idv[5] ==> solution3x.png ---
+--- needs --- solution.idv[6] ==> solution4x.png ---
+--- needs --- solution.idv[7] ==> solution5x.png ---
+--- needs --- solution.idv[8] ==> solution6x.png ---
+--- needs --- solution.idv[9] ==> solution7x.png ---
 --- characters ---
+Font("cmex","10","10","100")
+Font("cmr","5","5","100")
+Font("cmr","7","7","100")
 Font("cmr","10","10","100")
+Font("cmmi","7","7","100")
 Font("cmmi","10","10","100")
 Font("cmsy","7","7","100")
 Font("cmsy","10","10","100")
