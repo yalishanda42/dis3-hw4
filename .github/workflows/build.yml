@@ -30,6 +30,7 @@ jobs:
         with:
           root_file: solution.tex
           compiler: htlatex # to HTML
+          args: -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
                
       - name: Copy to index.html
         run: cp solution.html index.html
