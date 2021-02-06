@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.1.1)  9 JAN 2021 11:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.1)  6 FEB 2021 17:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **solution.tex
 (./solution.tex
-LaTeX2e <2020-10-01> patch level 2
-L3 programming layer <2020-12-07> xparse <2020-03-03>
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-01-09> xparse <2020-03-03>
 (/opt/texlive/texdir/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
 (/opt/texlive/texdir/texmf-dist/tex/latex/base/size10.clo
@@ -88,10 +88,10 @@ Package: inputenc 2020/08/01 v1.3d Input encoding file
 \inpenc@posthook=\toks21
 )
 (/opt/texlive/texdir/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2020/12/16 3.52 The Babel package
+Package: babel 2021/01/26 3.53 The Babel package
 
 (/opt/texlive/texdir/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2020/12/16 3.52 Babel common definitions
+File: babel.def 2021/01/26 3.53 Babel common definitions
 \babel@savecnt=\count197
 \U@D=\dimen148
 \l@babelnohyphens=\language86
@@ -325,8 +325,8 @@ ne 302.
 Package babel Info: Making " an active character on input line 344.
 ))
 (/opt/texlive/texdir/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count199
+File: l3backend-pdftex.def 2020-01-29 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count199
 \l__pdf_internal_box=\box49
 )
 (./solution.aux
@@ -359,13 +359,13 @@ LaTeX Font Info:    ... okay on input line 10.
 {/opt/texlive/texdir/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
 (./solution.aux) ) 
 Here is how much of TeX's memory you used:
- 2519 strings out of 479382
- 32862 string characters out of 5871336
- 326383 words of memory out of 5000000
- 19657 multiletter control sequences out of 15000+600000
+ 2552 strings out of 479304
+ 33619 string characters out of 5869247
+ 330640 words of memory out of 5000000
+ 19768 multiletter control sequences out of 15000+600000
  411322 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 65i,8n,72p,231b,357s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,8n,74p,231b,357s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/opt/texlive/texdir/texmf-dist/fonts/enc/dvips/cm-super/cm-s
 uper-t2a.enc}</opt/texlive/texdir/texmf-dist/fonts/type1/public/amsfonts/cm/cme
 x10.pfb></opt/texlive/texdir/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
@@ -378,7 +378,7 @@ dist/fonts/type1/public/cm-super/sfbx1440.pfb></opt/texlive/texdir/texmf-dist/f
 onts/type1/public/cm-super/sfrm1000.pfb></opt/texlive/texdir/texmf-dist/fonts/t
 ype1/public/cm-super/sfrm1200.pfb></opt/texlive/texdir/texmf-dist/fonts/type1/p
 ublic/cm-super/sfrm1728.pfb>
-Output written on solution.pdf (2 pages, 100268 bytes).
+Output written on solution.pdf (2 pages, 100139 bytes).
 PDF statistics:
  56 PDF objects out of 1000 (max. 8388607)
  40 compressed objects within 1 object stream
