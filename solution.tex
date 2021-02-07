@@ -19,44 +19,68 @@
 
 \section*{Решение}
 
-Търсената функция и нейните производни имат следния вид на степенен ред:
+Предполагаме, че търсената функция и нейните производни имат следния вид на степенен ред:
 
 \begin{align*}
-    y(x) &= \sum_{n=0}^{\infty} y_n x^n \\
-    y'(x) &= \sum_{n=1}^{\infty} y_n n x^{n-1} \\
+    y(x)   &= \sum_{n=0}^{\infty} y_n x^n \\
+    y'(x)  &= \sum_{n=1}^{\infty} y_n n x^{n-1} \\
     y''(x) &= \sum_{n=2}^{\infty} y_n n(n-1) x^{n-2}
 \end{align*}
 
-Имаме \( y'(0) = -2 \), следователно
+Имаме \( y(0) = 1 \) и \( y'(0) = -2 \), следователно
 
-\[
-    y'(x) = -2 + \sum_{n=2}^{\infty} y_n n x^{n-1}
-\]
+\begin{align*}
+    y(x)  &= 1 + \sum_{n=1}^{\infty} y_n x^n \\
+    y'(x) &= -2 + \sum_{n=2}^{\infty} y_n n x^{n-1}
+\end{align*}
 
 Така уравнението от условието добива вида
 
 \begin{gather*}
     (8x+3)\sum_{n=2}^\infty y_n n(n-1)x^{n-2} + \sum_{n=2} ^\infty y_n n x^{n-1} - 2 = 0 \\
-    \sum_{n=1}^\infty [8n(n+1) + 1]y_{n+1}x^n + \sum_{n=0}^\infty 3y_{n+2}(n+2)(n+1)x^n - 2 = 0
+    \sum_{n=1}^\infty [8n(n+1) + 1]y_{n+1}x^n + \sum_{n=0}^\infty 3(n+2)(n+1)y_{n+2}x^n - 2 = 0
 \end{gather*}
 
 При \( n = 0 \) имаме
 \begin{gather*}
-    3y_2 . 2 . 1 - 2 = 0 \Longleftrightarrow y_2 = \frac{1}{3}
+    3 . 2 . 1 . y_2 x^0 - 2 = 0 \\
+    y_2 = \frac{1}{3}
+\end{gather*}
+
+Следователно чрез премахване на нулевия член на сумата:
+\begin{gather*}
+    \sum_{n=0}^\infty 3(n+2)(n+1)y_{n+2}x^n = 2 + \sum_{n=1}^\infty 3(n+2)(n+1)y_{n+2}x^n
+\end{gather*}
+
+Уравнението от условието придобива вида:
+
+\begin{gather*}
+    \sum_{n=1}^\infty \{[8n(n+1) + 1]y_{n+1}x^n + 3(n+2)(n+1)y_{n+2}\}x^n = 0
 \end{gather*}
 
 При \( n \geq 1 \):
 
 \begin{gather*}
-    [8n(n+1) + 1]y_{n+1} + 3y_{n+2}(n+2)(n+1) - 2 = 0
+    [8n(n+1) + 1]y_{n+1} + 3y_{n+2}(n+2)(n+1) = 0
 \end{gather*}
+
+Т.е., за \( n \geq 2 \)
+
+\begin{gather*}
+    [8n(n+1) + 1]y_{n} + 3y_{n+1}(n+2)(n+1) = 0 \\
+    y_{n+1} = \frac{8n(n+1)+1}{3(n+2)(n+1)} y_n
+\end{gather*}
+
+Използвайки разлагане стигаме до крайния отговор.
+
+\[
+    y_n = - \frac{6}{7} \bigg(\frac{8}{3}\bigg)^n \binom{\frac{7}{8}}{n}
+\]
 
 \section*{Отговор}
 
 \[
     y(x) = 1 - \frac{6}{7}\sum_{n=1}^{\infty} \bigg(\frac{8}{3}\bigg)^n \binom{\frac{7}{8}}{n} x^n
 \]
-
-
 
 \end{document}
